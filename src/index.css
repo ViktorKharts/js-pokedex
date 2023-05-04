@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h3 {
+  margin-bottom: 0.2rem;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem 0.5rem;
+}
+
+.blocks-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
+  min-width: 100%;
+  padding: 3rem 0.5rem;
+}
+
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.all-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 500px;
+}
+
+.thumb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  margin-bottom: 1.5rem;
+  border: 1px solid #efefef;
+  border-radius: 0.2rem;
+  width: calc(33.33% - 1rem);
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+  transition: all 0.2s ease-in-out;
+}
+
+.thumb-container .number {
+  border-radius: 1rem;
+  padding: 0.2rem 0.4rem;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.thumb-container img {
+  width: 120px;
+  height: 120px;
+}
+
+.thumb-container small {
+  text-transform: capitalize;
+}
+
+.thumb-container:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.detail-wrapper button {
+  color: rgb(22, 22, 22);
+  padding: .5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.185);
+}
+
+.types-coniainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.type {
+  margin-top: 1rem;
+  padding: .2rem .3rem .3rem .3rem;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.load-more {
+  background: lightblue;
+  border-radius: 5px;
+  border: 1px solid #c6c6c6;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  min-width: 50%;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all .15s ease-in-out;
+}
+
+.load-more:hover {
+  background-color: cadetblue;
+}
+
+.details-card-container {
+  align-self: flex-start;
+  width: auto;
+  position: sticky;
+  top: 10rem;
+  right: 30rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.details-card-container > img {
+  max-height: 10rem;
+  width: auto;
+}
+
+.details-card-table {
+  display: table;
+  width: 15rem;
+}
+
+.details-card-table > div {
+  display: table-row;
+  width: 100%;
+}
+
+.details-card-table > div > div {
+  display: table-cell;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.rock {
+  background-color: rgb(148, 81, 81);
+}
+
+.ghost {
+  background-color: rgb(247, 247, 247);
+}
+
+.electric {
+  background-color: rgb(255, 255, 161);
+}
+
+.bug {
+  background-color: #F6D6A7;
+}
+
+.poison {
+  background-color: #e0a7f6;
+}
+
+.normal {
+  background-color: #F4F4F4;
+}
+
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863);
+}
+
+.fire {
+  background-color: #FBE3DF;
+}
+
+.grass {
+  background-color: #E2F9E1;
+}
+
+.water {
+  background-color: #E0F1FD;
+}
